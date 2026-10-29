@@ -16,7 +16,7 @@
 
 ---
 
-### 📸 Physical Prototype & System Overview
+### 📸 Physical Prototype & System Overview:
 
 | Assembled Robot Prototype | System Architecture Block Diagram |
 |:---:|:---:|
