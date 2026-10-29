@@ -44,7 +44,7 @@ flowchart TD
 
 ---
 
-## 🎯 Sensor Decision Matrix
+## 🎯 Sensor Decision Matrix:
 
 The three flame sensors provide digital outputs where:
 - `LOW` ($0$) = **Flame Detected**
