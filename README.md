@@ -12,7 +12,7 @@
   <b>An Arduino-powered autonomous mobile robotics platform engineered to detect fire signatures via multi-channel infrared triangulation, navigate toward the hazard, and execute high-coverage flame suppression using an optocoupled water pump and 180° oscillating servo nozzle.</b>
 </p>
 
-[Explore Docs](docs/) • [Circuit Diagram](docs/circuit_diagram.md) • [Hardware Assembly](docs/hardware_setup.md) • [Interview Guide](docs/interview_guide.md) • [Firmware Code](src/AquaFlare/AquaFlare.ino)
+[Explore Docs](docs/) • [Circuit Diagram](docs/circuit_diagram.md) • [Hardware Assembly](docs/hardware_setup.md) • [Control Algorithm](docs/algorithm_flowchart.md) • [Firmware Code](src/AquaFlare/AquaFlare.ino)
 
 ---
 
@@ -132,8 +132,7 @@ stateDiagram-v2
 ├── docs/
 │   ├── circuit_diagram.md        # Electrical schematics, wiring matrix & power isolation
 │   ├── hardware_setup.md         # Mechanical assembly, chassis, and tubing setup guide
-│   ├── algorithm_flowchart.md    # Control state machine and sensor truth tables
-│   └── interview_guide.md        # Comprehensive technical Q&A for placements and viva
+│   └── algorithm_flowchart.md    # Control state machine and sensor truth tables
 ├── src/
 │   └── AquaFlare/
 │       └── AquaFlare.ino         # Primary autonomous robot firmware
