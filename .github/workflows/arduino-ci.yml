@@ -1,0 +1,38 @@
+name: Arduino Firmware Verification
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Arduino CLI
+        uses: arduino/setup-arduino-cli@v1.1.2
+
+      - name: Install Arduino AVR Core
+        run: |
+          arduino-cli core update-index
+          arduino-cli core install arduino:avr
+
+      - name: Verify Main AquaFlare Sketch
+        run: |
+          arduino-cli compile --fqbn arduino:avr:uno src/AquaFlare/AquaFlare.ino
+
+      - name: Verify Sensor Calibration Test Sketch
+        run: |
+          arduino-cli compile --fqbn arduino:avr:uno test/sensor_calibration.ino
+
+      - name: Verify Motor Test Sketch
+        run: |
+          arduino-cli compile --fqbn arduino:avr:uno test/motor_test.ino
+
+      - name: Verify Pump & Servo Test Sketch
+        run: |
+          arduino-cli compile --fqbn arduino:avr:uno test/pump_servo_test.ino

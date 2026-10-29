@@ -1,0 +1,22 @@
+# Arduino Build & Output Artifacts
+*.hex
+*.elf
+*.bin
+*.o
+*.d
+*.obj
+build/
+*.bak
+
+# IDE & Editor Configuration
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# OS temporary files
+*.tmp
+*.log
